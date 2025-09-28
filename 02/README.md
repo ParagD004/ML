@@ -126,6 +126,9 @@ This project uses Weights & Biases for:
 - Model comparison
 - Experiment reproducibility
 
+### 🔗 W&B Project Dashboard
+View live experiments and results: [Ridge & Lasso Regression Project](https://wandb.ai/paragd004-dr-d-y-patil-vidyapeeth/ridge-lasso-regression)
+
 ## 🎯 Key Insights
 
 - **Feature Correlation**: Strong correlations between fire weather indices
