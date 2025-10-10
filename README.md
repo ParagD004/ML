@@ -183,26 +183,6 @@ X_selected = selector.fit_transform(X, y)
 - **Interpretability Priority**: Decision Trees, Linear Models
 - **Robustness Priority**: Random Forest, XGBoost
 
-## 📚 Learning Resources
-
-### Books
-- "Hands-On Machine Learning" by Aurélien Géron
-- "The Elements of Statistical Learning" by Hastie, Tibshirani, and Friedman
-- "Pattern Recognition and Machine Learning" by Christopher Bishop
-- "Introduction to Statistical Learning" by James, Witten, Hastie, and Tibshirani
-
-### Online Courses
-- Andrew Ng's Machine Learning Course (Coursera)
-- Fast.ai Practical Deep Learning
-- edX MIT Introduction to Machine Learning
-- Udacity Machine Learning Engineer Nanodegree
-
-### Documentation
-- [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
-- [XGBoost Documentation](https://xgboost.readthedocs.io/)
-- [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [NumPy Documentation](https://numpy.org/doc/)
-
 ## 🔍 Advanced Topics
 
 ### Ensemble Methods
