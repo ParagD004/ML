@@ -159,6 +159,11 @@ data['category_encoded'] = le.fit_transform(data['category'])
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+# Dimensionality reduction
+from sklearn.decomposition import PCA
+pca = PCA(n_components=0.95)  # Keep 95% of variance
+X_pca = pca.fit_transform(X_scaled)
 ```
 
 ### Feature Selection
@@ -171,6 +176,11 @@ high_corr_features = correlation_matrix[abs(correlation_matrix) > 0.8]
 from sklearn.feature_selection import SelectKBest, f_classif
 selector = SelectKBest(score_func=f_classif, k=10)
 X_selected = selector.fit_transform(X, y)
+
+# PCA-based dimensionality reduction
+from sklearn.decomposition import PCA
+pca = PCA(n_components=10)
+X_pca = pca.fit_transform(X_scaled)
 ```
 
 ## 🎯 Model Selection Guidelines
@@ -190,26 +200,6 @@ X_selected = selector.fit_transform(X, y)
 - **Accuracy Priority**: XGBoost, Gradient Boosting, Random Forest
 - **Interpretability Priority**: Decision Trees, Linear Models
 - **Robustness Priority**: Random Forest, XGBoost
-
-## 📚 Learning Resources
-
-### Books
-- "Hands-On Machine Learning" by Aurélien Géron
-- "The Elements of Statistical Learning" by Hastie, Tibshirani, and Friedman
-- "Pattern Recognition and Machine Learning" by Christopher Bishop
-- "Introduction to Statistical Learning" by James, Witten, Hastie, and Tibshirani
-
-### Online Courses
-- Andrew Ng's Machine Learning Course (Coursera)
-- Fast.ai Practical Deep Learning
-- edX MIT Introduction to Machine Learning
-- Udacity Machine Learning Engineer Nanodegree
-
-### Documentation
-- [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
-- [XGBoost Documentation](https://xgboost.readthedocs.io/)
-- [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [NumPy Documentation](https://numpy.org/doc/)
 
 ## 🔍 Advanced Topics
 
