@@ -17,6 +17,7 @@ Machine-Learning-Algorithms/
 ├── 09-Adaboost/                   # Adaptive boosting
 ├── 10-Gradient Boosting/          # Gradient boosting machines
 ├── 11-XGBoost/                    # Extreme gradient boosting
+├── 12-PCA/                        # Principal Component Analysis
 └── README.md                      # This file
 ```
 
@@ -39,6 +40,9 @@ Machine-Learning-Algorithms/
 10. **Gradient Boosting** → Sequential ensemble learning
 11. **XGBoost** → State-of-the-art gradient boosting
 
+### Dimensionality Reduction
+12. **PCA** → Principal Component Analysis for feature reduction
+
 ## 📊 Algorithm Comparison
 
 | Algorithm | Type | Interpretability | Speed | Accuracy | Overfitting Risk |
@@ -54,6 +58,7 @@ Machine-Learning-Algorithms/
 | AdaBoost | Both | Low | Medium | High | Medium |
 | Gradient Boosting | Both | Low | Slow | Very High | Medium |
 | XGBoost | Both | Low | Fast | Very High | Low |
+| PCA | Dimensionality Reduction | Medium | Fast | N/A | Low |
 
 ## 🔧 Use Case Guide
 
@@ -77,6 +82,9 @@ Machine-Learning-Algorithms/
 - **High Accuracy**: XGBoost, Gradient Boosting, Random Forest
 - **Fast Prediction**: Naive Bayes, KNN, Linear Models
 - **Categorical Features**: Decision Trees, Random Forest, XGBoost
+- **High Dimensionality**: PCA, Ridge/Lasso, Random Forest
+- **Visualization Needs**: PCA, Decision Trees
+- **Feature Engineering**: PCA, Random Forest (feature importance)
 
 ## 🚀 Quick Start
 
