@@ -18,6 +18,7 @@ Machine-Learning-Algorithms/
 ├── 10-Gradient Boosting/          # Gradient boosting machines
 ├── 11-XGBoost/                    # Extreme gradient boosting
 ├── 12-PCA/                        # Principal Component Analysis
+├── 13-K Means Clustering Unsupervised/  # K-Means clustering
 └── README.md                      # This file
 ```
 
@@ -43,6 +44,9 @@ Machine-Learning-Algorithms/
 ### Dimensionality Reduction
 12. **PCA** → Principal Component Analysis for feature reduction
 
+### Unsupervised Learning
+13. **K-Means Clustering** → Partition data into k clusters
+
 ## 📊 Algorithm Comparison
 
 | Algorithm | Type | Interpretability | Speed | Accuracy | Overfitting Risk |
@@ -59,6 +63,7 @@ Machine-Learning-Algorithms/
 | Gradient Boosting | Both | Low | Slow | Very High | Medium |
 | XGBoost | Both | Low | Fast | Very High | Low |
 | PCA | Dimensionality Reduction | Medium | Fast | N/A | Low |
+| K-Means | Clustering | High | Fast | N/A | Low |
 
 ## 🔧 Use Case Guide
 
@@ -75,16 +80,24 @@ Machine-Learning-Algorithms/
 - **Customer Churn**: Logistic Regression, Random Forest, XGBoost
 - **Fraud Detection**: SVM, Random Forest, XGBoost
 
+### Clustering Problems
+- **Customer Segmentation**: K-Means, PCA + K-Means
+- **Market Research**: K-Means, PCA for visualization
+- **Image Segmentation**: K-Means clustering
+- **Gene Analysis**: K-Means, PCA for dimensionality reduction
+
 ### Specific Scenarios
 - **Small Dataset**: Logistic Regression, SVM, Naive Bayes
-- **Large Dataset**: XGBoost, Random Forest, Linear Regression
-- **High Interpretability**: Decision Trees, Linear/Logistic Regression
+- **Large Dataset**: XGBoost, Random Forest, Linear Regression, K-Means
+- **High Interpretability**: Decision Trees, Linear/Logistic Regression, K-Means
 - **High Accuracy**: XGBoost, Gradient Boosting, Random Forest
-- **Fast Prediction**: Naive Bayes, KNN, Linear Models
+- **Fast Prediction**: Naive Bayes, KNN, Linear Models, K-Means
 - **Categorical Features**: Decision Trees, Random Forest, XGBoost
 - **High Dimensionality**: PCA, Ridge/Lasso, Random Forest
-- **Visualization Needs**: PCA, Decision Trees
+- **Visualization Needs**: PCA, Decision Trees, K-Means
 - **Feature Engineering**: PCA, Random Forest (feature importance)
+- **Unlabeled Data**: K-Means, PCA
+- **Pattern Discovery**: K-Means, PCA
 
 ## 🚀 Quick Start
 
